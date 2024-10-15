@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: aqua;
+    z-index: 10;
+    color: white;
+    padding: 3vh;
+}
+
+.navlist {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 10vh;
+}
