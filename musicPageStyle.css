@@ -12,7 +12,8 @@ body{
     flex-direction: column;
     align-items: center;
     border: 2px solid gray;
-    background-image: url(https://img.freepik.com/free-photo/cartoon-style-musical-notes-background_23-2151056769.jpg); /* Imagen de fondo del box*/
+    background-image: url(images/fondogenericocolor.jpg); /* Imagen de fondo del box*/
+    background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(100px);
     
