@@ -2,7 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: black; 
 }
 .filterBox{
     padding: 10rem;
@@ -12,11 +12,15 @@ body{
     flex-direction: column;
     align-items: center;
     border: 2px solid gray;
-    background-image: url(images/fondogenericocolor.jpg); /* Imagen de fondo del box*/
+    background-image: url(); /* Imagen de fondo del box*/
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(100px);
-    
+}
+
+ section {
+    background-image: url(images/fondogenericocolor.jpg);
+
 }
 .pieDePagina{
     display: flex;
