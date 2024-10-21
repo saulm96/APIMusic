@@ -4,60 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SonarLink</title>
-    <link rel="stylesheet" href="/style_index.css">
-    <link rel="icon" href="/images/logos/faviconweb.png" type= "png">
-    <link rel="icon" href="" type="image/png" class="miniatura">
+    <link rel="stylesheet" href="/ common_style.css">
+    <link rel="stylesheet" href="/css/style_index.css">
+    <link rel="icon" href="images/logos/faviconweb.png" type="icon">
 </head>
-<body>
+
+<body>  
+    <div class="video-container">
+        <video autoplay loop muted playsinline id="background-video">
+            <source src="videos/videoportada.webm">
+        </video>
+    <div class="overlay-text">
+            <h1>Bienvenido a Sonarlink</h1>
+            <p>Disfruta de la mejor música que puedas imaginar</p>
+        </div>
+    </div>
+
     <header>
         <nav class="navbar">
-            <figure class="logo" href="/images/logos/sonarlinkblanco.png"></figure>
+            <figure>
+                <img class="logo" src="/images/logos/sonarlinkblanco.png" alt="Logo">
+            </figure>
             <ul class="navlist">
-                <li><a href="">Música</a></li>
-                <li><a href="">Podcast</a></li>
-              <li><a href="">Shows</a></li>
+                <li><a href="#musica">Música</a></li>
+                <li><a href="#novedades">Novedades</a></li>
             </ul>
         </nav>
-    </header>
-    <main> 
-         <section class="diapositiva1">
-            <h1>¡Bienvenido a SonarLink!</h1>
-            <h2>Tu buscador musical de confianza</h2>
-        </section>
-        <section class="diapositiva2">
+
+    <main class="secciones"> 
+        <section id="musica" class="diapositiva1">
             <h1>MÚSICA</h1>
         </section>
-        <section class="diapositiva3">
-            <h1>PODCAST</h1>
+        <section id="podcast" class="diapositiva2">
+            <h1>NOVEDADES</h1>
         </section>
-        <section class="diapositiva4">
-            <h1>SHOWS</h1>
-        </section>
-    </main>
+    </main> 
+
     <footer class="pieDePagina">
-        <ul class="socialMedia">
-            <li><a target="blank">Instagram</a></li> <!-- Insertar logotipo instagram -->
-            <li><a target="blank">Twitter</a></li> <!-- Insertar logotipo twitter/X -->
-            <li><a target="blank">Facebook</a></li> <!--Insertar logo facebook -->
+        <ul class="Company">
+            <li><h4>Empresa</h4></li>
+            <li><a href="">A cerca de</a></li>
+            <li><a href="">Empleo</a></li>
         </ul>
+
         <ul class="comunity">
+            <li><h4>Comunidad</h4></li>
             <li><a href="">Para artistas</a></li> <!-- Faltan links -->
             <li><a href="">Desarrolladores</a></li> <!-- Faltan links -->
             <li><a href="">Publicidad</a></li> <!-- Faltan links -->
             <li><a href="">Inversores</a></li> <!-- Faltan links -->
             <li><a href="">Proveedores</a></li> <!-- Faltan links -->
         </ul>
+        
         <ul class="policyPolitics">
-            <li><a href="">Legal.</a></li><!-- Faltan links -->
+            <li><h4>Privacidad y Legalidad</h4></li>
             <li><a href="">Centro de seguridad y privacidad.</a></li><!-- Faltan links -->
             <li><a href="">Política de privacidad.</a></li><!-- Faltan links -->
             <li><a href="">Configuración de cookies.</a></li><!-- Faltan links -->
         </ul>
+
         <ul class="contactInfo">
-            <li><b>Tlf:</b> +1 (555) 555 5555</li>
-            <li><b>Email:</b> sonarmanager@sonarlink.com</li>
-            <li><b>Dirección:</b> Arturo campion 1, 9ªD</li>
+            <li><h4>Contacto</h4></li>
+            <li>Tlf: +1 (555) 555 5555</li>
+            <li>Email: sonarmanager@sonarlink.com</li>
+            <li>Dirección: Arturo campion 1, 9ªD</li>
         </ul>
+    
+        <div class="sub-footer">
+                <hr class="divider">
+                <p>Legal  |  Accesibilidad  |  Declaración de Privacidad | © SonarLink 2024 </p>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/footerLogos/fbblanco.png" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/footerLogos/twiterblanco.png" alt="Twitter" class="social-icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/footerLogos/instablanco.png" alt="Instagram" class="social-icon"></a>
+        </div>
+         
+
     </footer>
 </body>
 </html>
