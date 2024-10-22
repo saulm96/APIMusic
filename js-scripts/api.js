@@ -262,7 +262,7 @@ function tracksOnSpotify(resultsearchTrackOnSpotify) {
     return resultTracks;
 }
 async function searchTracksOnSpotify(query) {
-    const resultsearchTrackOnSpotify = await fetchData('search?query=' + query + '&type=track&locale=es-ES%2Ces%3Bq%3D0.9&offset=0&limit=50');
+    const resultsearchTrackOnSpotify = await fetchData('search?query=' + query + '&type=track&locale=es-ES%2Ces%3Bq%3D0.9&offset=0&limit=10');
     const tracks = tracksOnSpotify(resultsearchTrackOnSpotify);
     return tracks;
 }
@@ -287,7 +287,7 @@ function albumsOnSpotify(resultsearchAlbumsOnSpotify) {
     return resultAlbums;
 }
 async function searchAlbumsOnSpotify(query) {
-    const resultsearchAlbumsOnSpotify = await fetchData('search?query=' + query + '&type=album&locale=es-ES%2Ces%3Bq%3D0.9&offset=0&limit=50');
+    const resultsearchAlbumsOnSpotify = await fetchData('search?query=' + query + '&type=album&locale=es-ES%2Ces%3Bq%3D0.9&offset=0&limit=10');
     const albums = albumsOnSpotify(resultsearchAlbumsOnSpotify);
     return albums;
 }
@@ -309,7 +309,7 @@ function artistsOnSpotify(resultsearchArtistsOnSpotify) {
     return result;
 }
 async function searchArtistsOnSpotify(query) {
-    const resultsearchArtistsOnSpotify = await fetchData('search?query=' + query + '&type=artist&locale=es-ES%2Ces%3Bq%3D0.9&offset=0&limit=50');
+    const resultsearchArtistsOnSpotify = await fetchData('search?query=' + query + '&type=artist&locale=es-ES%2Ces%3Bq%3D0.9&offset=0&limit=10');
     const artists = artistsOnSpotify(resultsearchArtistsOnSpotify);
     return artists;
 }

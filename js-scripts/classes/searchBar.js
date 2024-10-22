@@ -2,10 +2,11 @@ import { searchOnSpotify, searchAlbumsOnSpotify } from "../api.js";
 import createTrackCards from "../trackCards.js";
 import createArtistCards from "../artistCards.js";
 import createAlbumCards from "../albumCards.js";
+import createAllCards from "../allCards.js";
 
 
 const FILTERS = {
-    todos: searchOnSpotify,
+    todos: createAllCards,
     artistas: createArtistCards,
     albumes: createAlbumCards,
     canciones: createTrackCards,
