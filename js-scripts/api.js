@@ -1,7 +1,7 @@
-// FUNCION PARA OBTENER EL TOKEN DE ACCESO DE SPOTIFY
-const clientId = '640d0adb70754d648f7a86d85a4f2dee';
-const clientSecret = '5f9d1521f5be464b861e41889e3bc833';
+import { clientId, clientSecret } from "./apiKey.js";
 
+
+// FUNCION PARA OBTENER EL TOKEN DE ACCESO DE SPOTIFY
 async function obtenerToken() {
     const result = await fetch('https://accounts.spotify.com/api/token', {
         method: 'POST',
@@ -12,13 +12,12 @@ async function obtenerToken() {
         body: 'grant_type=client_credentials'
     });
     const data = await result.json();
-    token = data.access_token;
+    const token = data.access_token;
     return token;
 }
 
 //FUNCION PARA OBTENER LA URL DE BUSQUEDA DE LA API
 const BASE_URL = 'https://api.spotify.com/v1/';
-
 async function fetchData(route, searchParams = {},) {
     try {
         const token = await obtenerToken();
@@ -40,6 +39,7 @@ async function fetchData(route, searchParams = {},) {
 
 
 
+//FUNCION PARA OBTENER LA INFORMACION BASICA DEL ARTISTA
 function artistInformation(resultArtistInformation) {
     let image;
     if (resultArtistInformation.images && resultArtistInformation.images.length > 0) {
@@ -63,7 +63,6 @@ async function getArtistInformation(id) {
 
 
 //FUNCIONES PARA LA PAGINA DE CADA ARTISTA
-
 function artistAlbums(resultArtistAlbums) {
     const result = resultArtistAlbums.items.map(album => {
         let image;
@@ -141,7 +140,6 @@ async function getArtistRelatedArtists(id) {
 
 
 //FUNCION PARA MOSTRAR EL ALBUM Y SU TRACKLIST
-
 function albumInformation(resultAlbumInformation) {
     const trackList = resultAlbumInformation.tracks.items.map(track => {
         return {
@@ -181,7 +179,6 @@ async function getAlbumInformation(id) {
 
 
 //FUNCION PARA MOSTRAR LA CANCION
-
 function trackInformation(resultTrackInformation) {
     let image;
     if (resultTrackInformation.images && resultTrackInformation.images.length > 0) {
@@ -212,7 +209,6 @@ async function getTrackInformation(id) {
 
 
 //FUNCION PARA EL CARRUSEL DE NOVEDADES
-
 function newReleases(resultNewReleases) {
     const result = resultNewReleases.albums.items.map(track => {
         let image;
@@ -240,7 +236,6 @@ async function getNewReleases() {
 
 
 //FUNCIONES PARA LA BARRA DE BUSQUEDA GENERAL
-
 function tracksOnSpotify(resultsearchTrackOnSpotify) {
     const resultTracks = resultsearchTrackOnSpotify.tracks.items.map(track => {
         let image;
@@ -272,7 +267,6 @@ async function searchTracksOnSpotify(query) {
     return tracks;
 }
 
-
 function albumsOnSpotify(resultsearchAlbumsOnSpotify) {
     const resultAlbums = resultsearchAlbumsOnSpotify.albums.items.map(album => {
         let image;
@@ -283,8 +277,9 @@ function albumsOnSpotify(resultsearchAlbumsOnSpotify) {
         }
         return {
             name: album.name,
-            artists: album.artists.map(artist => artist.name),
             albumId: album.id,
+            artists: album.artists.map(artist => artist.name),
+            artistsId: album.artists.map(artist => artist.id),
             releaseDate: album.release_date,
             image: image,
         }
@@ -296,7 +291,6 @@ async function searchAlbumsOnSpotify(query) {
     const albums = albumsOnSpotify(resultsearchAlbumsOnSpotify);
     return albums;
 }
-
 
 function artistsOnSpotify(resultsearchArtistsOnSpotify) {
     const result = resultsearchArtistsOnSpotify.artists.items.map(artist => {
@@ -325,6 +319,12 @@ async function searchOnSpotify(query) {
     const spotifyArtists = await searchArtistsOnSpotify(query);
     const spotifyAlbums = await searchAlbumsOnSpotify(query);
     const spotifyTracks = await searchTracksOnSpotify(query);
-    console.log(spotifyArtists, spotifyAlbums, spotifyTracks);
     return spotifyArtists, spotifyAlbums, spotifyTracks;
+}
+
+export {
+    searchOnSpotify,
+    searchTracksOnSpotify,
+    searchAlbumsOnSpotify,
+    searchArtistsOnSpotify
 }

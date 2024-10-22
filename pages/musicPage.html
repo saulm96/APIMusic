@@ -23,7 +23,7 @@
     <section class="filterBox">
         <h1>Música</h1>
         <p>El buscador de música más potente basado en la API de música de Spotify.</p> 
-        <div class="filterBrowser">
+        <!-- <div class="filterBrowser">
             <label for="artistname">Artista:</label>
             <input type="text" name="artistname" id="artistname" placeholder="Nombre Artista">
 
@@ -34,7 +34,15 @@
 
             <label for="yearOfLaunch">Año Lanzamiento:</label>
             <input type="number" name="yearOfLaunch" id="yearOfLaunch" placeholder="Año">
-        </div>
+        </div> -->
+        <div id="search"></div>
+        <script type="module" src="/js-scripts/classes/searchBar.js"></script>
+        <div id="search-results"></div>
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
     </section>
         
     <div id="scrollContainer"> </div>
