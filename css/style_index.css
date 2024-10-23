@@ -1,34 +1,13 @@
 
 h1 {
-    display: flex;
     font-size: 6rem;
     margin-top: 450px;
     margin-left: 60px;
     color: #fffaf3;
-}
 
-.diapositiva1 h1{
-    margin: 0; 
-    padding: 0;
-    color:#000;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-}
-
-.diapositiva2 h1{
-    margin: 0; 
-    padding: 0;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
 
-    
-h2 {
-    display: flex;
-    font-size: 40px; 
-    margin-top: 600px;
-    margin-left: -1100px;
-    color: rgba(250, 47, 115, 0.7);
-}
 
 
 .video-container {
@@ -63,10 +42,50 @@ h2 {
     font-size: 1.4em;
     font-family: 'Aileron';
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+
+    
 }
 
 
+
+
+
+body {
+    /* Alineado a la derecha */
+      align-items: center;
+      height: 100vh;
+      background: url('tu-imagen.png') no-repeat center center;
+      background-size: cover;
+      padding-right: 20mm; /* Margen derecho de 20mm */
+    }
+  
+    .content {
+      max-width: 40%; /* Limitar el ancho para que sea legible */
+      text-align: right;
+      font-size: 2em;
+      color: white;
+    }
+  
+    @media (max-width: 768px) {
+      body {
+        justify-content: center; /* Centrar contenido en pantallas pequeñas */
+        padding-right: 0;
+        padding-left: 10px; /* Añadir algo de padding en los bordes */
+        padding-right: 10px;
+      }
+  
+      .content {
+        max-width: 90%; /* Ancho mayor para pantallas pequeñas */
+        text-align: center; /* Centramos el texto */
+      }
+.diapositiva2 h1{
+    display: flex;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+
+}
 .diapositiva1 {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +94,27 @@ h2 {
     height: 100vh;
     background-color:#fffaf3;
     background-size: cover;
-    background-image: url(/images/);
+    background-image: linear-gradient(rgba(255, 87, 87, 0.35), rgba(140, 82, 255, 0.35)), url('/images/fondomusica.jpg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.diapositiva1 h2{
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Aileron';
+    justify-items: right;
+    align-items: center;
+    height: 100vh;
+    font-size: 4.5rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    color: #fffaf3;
+    
+
 }
 
 .diapositiva2 {
@@ -85,7 +124,8 @@ h2 {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(90deg, #ff5757, #8c52ff);
+    background: black;
     background-size: cover;
+    color: rgb(255, 87, 87);
 }
 
