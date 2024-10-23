@@ -2,9 +2,8 @@ import { searchTracksOnSpotify } from "./api.js";
 import Track from "./classes/tracks.js";
 
 async function createTrackCards(query) {
-    const tracksSection = document.getElementById("search-results")
+    const tracksSection = document.getElementById("tracks-results")
     const tracks = await searchTracksOnSpotify(query);
-    tracksSection.innerHTML = ''; 
     //tracks.sort(((a, b) => b.popularity - a.popularity));
 
     tracks.forEach(track => {

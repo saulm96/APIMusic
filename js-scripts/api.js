@@ -45,7 +45,7 @@ function artistInformation(resultArtistInformation) {
     if (resultArtistInformation.images && resultArtistInformation.images.length > 0) {
         image = resultArtistInformation.images[0].url;
     } else {
-        image = 'images/logos/faviconweb.png';
+        image = '/images/logos/faviconweb.png';
     }
     return {
         genres: resultArtistInformation.genres,
@@ -69,7 +69,7 @@ function artistAlbums(resultArtistAlbums) {
         if (album.images && album.images.length > 0) {
             image = album.images[0].url;
         } else {
-            image = 'images/logos/faviconweb.png';
+            image = '/images/logos/faviconweb.png';
         }
         return {
             id: album.id,
@@ -96,7 +96,7 @@ function artistTopTracks(resultArtistTopTracks) {
         if (track.album.images && track.album.images.length > 0) {
             image = track.album.images[0].url;
         } else {
-            image = 'images/logos/faviconweb.png';
+            image = '/images/logos/faviconweb.png';
         }
         return {
             popularity: track.popularity,
@@ -121,7 +121,7 @@ function artistRelatedArtists(resultRelatedArtists) {
         if (artist.images && artist.images.length > 0) {
             image = artist.images[0].url;
         } else {
-            image = 'images/logos/faviconweb.png';
+            image = '/images/logos/faviconweb.png';
         }
         return {
             name: artist.name,
@@ -157,7 +157,7 @@ function albumInformation(resultAlbumInformation) {
     if (resultAlbumInformation.images && resultAlbumInformation.images.length > 0) {
         image = resultAlbumInformation.images[0].url;
     } else {
-        image = 'images/logos/faviconweb.png';
+        image = '/images/logos/faviconweb.png';
     }
     return {
         totalTracks: resultAlbumInformation.total_tracks,
@@ -184,7 +184,7 @@ function trackInformation(resultTrackInformation) {
     if (resultTrackInformation.images && resultTrackInformation.images.length > 0) {
         image = resultTrackInformation.images[0].url;
     } else {
-        image = 'images/logos/faviconweb.png';
+        image = '/images/logos/faviconweb.png';
     }
     return {
         image: image,
@@ -215,7 +215,7 @@ function newReleases(resultNewReleases) {
         if (track.images && track.images.length > 0) {
             image = track.images[0].url;
         } else {
-            image = 'images/logos/faviconweb.png';
+            image = '/images/logos/faviconweb.png';
         } return {
             image: image,
             name: track.name,
@@ -229,7 +229,6 @@ function newReleases(resultNewReleases) {
 async function getNewReleases() {
     const resultNewReleases = await fetchData('browse/new-releases?offset=0&limit=50&locale=es-ES,es;q%3D0.9/');
     const novedades = newReleases(resultNewReleases);
-
     return novedades;
 }
 
@@ -242,7 +241,7 @@ function tracksOnSpotify(resultsearchTrackOnSpotify) {
         if (track.album.images && track.album.images.length > 0) {
             image = track.album.images[0].url;
         } else {
-            image = 'images/logos/faviconweb.png';
+            image = '/images/logos/faviconweb.png';
         }
         return {
             popularity: track.popularity,
@@ -273,7 +272,7 @@ function albumsOnSpotify(resultsearchAlbumsOnSpotify) {
         if (album.images && album.images.length > 0) {
             image = album.images[0].url;
         } else {
-            image = 'images/logos/faviconweb.png';
+            image = '/images/logos/faviconweb.png';
         }
         return {
             name: album.name,
@@ -298,7 +297,7 @@ function artistsOnSpotify(resultsearchArtistsOnSpotify) {
         if (artist.images && artist.images.length > 0) {
             image = artist.images[0].url;
         } else {
-            image = 'images/logos/faviconweb.png';
+            image = '/images/logos/faviconweb.png';
         }
         return {
             name: artist.name,

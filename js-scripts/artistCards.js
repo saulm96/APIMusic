@@ -2,9 +2,8 @@ import { searchArtistsOnSpotify } from "./api.js";
 import Artist from "./classes/artists.js";
 
 async function createArtistCards(query) {
-    const artistsSection = document.getElementById("search-results")
+    const artistsSection = document.getElementById("artists-results")
     const artists = await searchArtistsOnSpotify(query);
-    artistsSection.innerHTML = ''; 
     //tracks.sort(((a, b) => b.popularity - a.popularity));
 
     artists.forEach(artist => {
