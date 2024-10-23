@@ -78,6 +78,8 @@ body {
         max-width: 90%; /* Ancho mayor para pantallas pequeñas */
         text-align: center; /* Centramos el texto */
       }
+    }
+
 .diapositiva2 h1{
     display: flex;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
