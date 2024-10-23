@@ -2,9 +2,8 @@ import { searchAlbumsOnSpotify } from "./api.js";
 import Album from "./classes/albums.js";
 
 async function createAlbumCards(query) {
-    const albumsSection = document.getElementById("search-results")
+    const albumsSection = document.getElementById("albums-results")
     const albums = await searchAlbumsOnSpotify(query);
-    albumsSection.innerHTML = ''; 
     //tracks.sort(((a, b) => b.popularity - a.popularity));
 
     albums.forEach(album => {

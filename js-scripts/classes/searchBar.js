@@ -25,6 +25,7 @@ class SearchBar {
         this.createArtistsButton();
         this.createTracksButton();
         this.createAlbumsButton();
+        this.timeout = null;
 
         this.searchSection.appendChild(this.buttonsContainer);
     }
@@ -94,15 +95,22 @@ class SearchBar {
     }
 
     async handleSearch() {
-        if (this.query.trim().length > 0) {
-            this.buttonsContainer.classList.remove('hidden');
-            const searchFunction = FILTERS[this.currentFilter];
-            const result = await searchFunction(this.query);
-            return result;
-
-        } else {
-            this.buttonsContainer.classList.add('hidden');
+        if (this.timeout) {
+            clearTimeout(this.timeout);
         }
+        this.timeout= setTimeout(async () => {
+            document.getElementById('tracks-results').innerHTML = '';
+            document.getElementById('albums-results').innerHTML = '';
+            document.getElementById('artists-results').innerHTML = '';
+            if (this.query.trim().length > 0) {
+                this.buttonsContainer.classList.remove('hidden');
+                const searchFunction = FILTERS[this.currentFilter];
+                const result = await searchFunction(this.query);
+                return result;
+            } else {
+                this.buttonsContainer.classList.add('hidden');
+            }
+        }, 500);
     }
 }
 
