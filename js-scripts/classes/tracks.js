@@ -28,6 +28,12 @@ class Track {
         }
 
         section.classList.add("track-card");
+        trackName.classList.add('track-name');
+        artists.classList.add('artists');
+        album.classList.add('album');
+        duration.classList.add('duration');
+        explicit.classList.add('explicit');
+        play.classList.add('play');
         image.src = this.image;
         trackName.innerText = this.trackName;
         artists.innerText = this.artists, this.artistsId;
@@ -38,7 +44,10 @@ class Track {
         play.src = this.trackPreview;
         play.controls = true;
 
-        section.append(image, trackName, artists, album, duration, explicit, play);
+        const trackInfo = document.createElement('div');
+        trackInfo.classList.add('track-info');
+        trackInfo.append(trackName, artists, album, duration, explicit)
+        section.append(image, trackInfo, play);
         return section;
     }
 }
