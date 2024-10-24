@@ -1,7 +1,4 @@
-* {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+
 
 @font-face {
     font-family:'Aileron';
@@ -9,19 +6,9 @@
     src: url('aileron-regular.woff') format('woff');
 }
 
-main {
-    width: 100%;
-}
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: black; 
-}
+
+
 .logo {
     max-width:250px ; 
     height: auto; 
