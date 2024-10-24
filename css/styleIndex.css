@@ -47,13 +47,11 @@ h1 {
 
 
 .overlay-text p {
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-family: 'aileron_regular';
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 
-
 }
-
 
 body {
     /* Alineado a la derecha */
@@ -78,9 +76,9 @@ body {
         justify-content: center;
         /* Centrar contenido en pantallas pequeñas */
         padding-right: 0;
-        padding-left: 10px;
+        padding-left: 0px;
         /* Añadir algo de padding en los bordes */
-        padding-right: 10px;
+        padding-right: 0px;
     }
 
     .content {
@@ -107,10 +105,18 @@ body {
 
 .diapositiva1 h2 {
     font-family: 'aileron_regular';
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     color: #fffaf3;
-    text-align: right;
+    padding: 0px 0px 0px 130px; 
+
+}
+h2 {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    letter-spacing: 3px;
+    
 }
 a {
   text-decoration: none;  
