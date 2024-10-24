@@ -39,8 +39,6 @@ class Track {
         artists.innerText = this.artists, this.artistsId;
         album.innerText = this.album, this.albumId;
         duration.innerText = `${Math.floor(this.trackDuration / 60000)}:${Math.floor((this.trackDuration % 60000) / 1000)}`
-        /* const durationDate = new Date(this.trackDuration);
-        duration.innerText = durationDate.getMinutes() + ':' + durationDate.getSeconds(); */
         play.src = this.trackPreview;
         play.controls = true;
 

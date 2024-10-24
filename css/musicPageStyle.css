@@ -7,14 +7,15 @@ body{
     min-height: 100vh; 
     margin: 0; 
 }
+
 header {
     width: 100%; 
 }
-
   
 .hidden {
     display: none;
 }
+
 .search-input{
     border-radius: 50px 50px 50px 50px; 
     height: 3rem;
@@ -23,7 +24,6 @@ header {
     padding: 10px 30px;
     font-family:'aileronbold';
     border: none;
-  
 }
 
 .filter-button{
@@ -36,11 +36,11 @@ header {
     color: #f8f9fa;
     font-family:'aileronbold';
     border: none;
-   
 }
+
 .filter-button:hover{
-background-color: rgb(63, 63, 63, 0.4);
-font-weight: bold;
+    background-color: rgb(63, 63, 63, 0.4);
+    font-weight: bold;
 }
 
 .filterBox{
@@ -57,9 +57,6 @@ font-weight: bold;
     margin-top:0;
     padding-top: 30px;
 }
-
-
-
 
 #carousel-main {
     margin-top:8rem;
@@ -98,14 +95,16 @@ font-weight: bold;
     border-radius: 0px 20px 0px 60px; 
     box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.7);
     padding: 12px;
-
 }
+
 .carousel-slide:hover{
     background-color: #3f3f3f;
 }
+
 .carousel-slide:hover h3{
     color: white;
 }
+
 .carousel-slide:hover p{
     color:white;
 }
@@ -123,7 +122,6 @@ font-weight: bold;
     height: 100%;
     object-fit: cover;
     border-radius: 0px 20px 0px 60px; 
-
 }
 
 .carousel-slide h3 {

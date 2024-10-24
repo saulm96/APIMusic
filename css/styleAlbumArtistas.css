@@ -9,22 +9,18 @@
     background-color: #fffaf3;
     text-align: left;
     font-family:'aileronbold';
-
 }
-
 
 .artist-card h2{
     font-size: 30px;
     padding-left: 40px;
     font-family:'aileronbold';
-
 }
 
 .artist-card h3{
     font-family:'aileronbold';
     font-size: 22px;
     padding-left: 40px;
-
 }
 
 .artist-card p{
@@ -45,6 +41,7 @@
     width: 100%;
     justify-content: center;
 }
+
 #artist-results .cards-container {
     padding-left: 4rem;
 }
@@ -52,6 +49,4 @@
 .artist-card:hover {
     background-color:#3f3f3f;
     color: #fffaf3;
-  
-    
 }

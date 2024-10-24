@@ -114,6 +114,4 @@ class SearchBar {
     }
 }
 
-
-
 const searchBar = new SearchBar();
