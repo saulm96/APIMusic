@@ -46,13 +46,13 @@ h1{
 
 
 #carousel-main {
-    margin-top:8rem;
-    width: 100%;
-    padding: 20px 0;
-    background: var(--background-primary, #ffffff);
+    margin-top:10rem;
+    margin-bottom: 1rem;
+    background: transparent;
 }
 
 .carousel-wrapper {
+    height: 25rem;
     width: 100%;
     position: relative;
     overflow: hidden; /* Oculta los slides que están fuera de la vista */
@@ -60,22 +60,40 @@ h1{
 
 .carousel-track {
     display: flex;
+    justify-content: space;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .slides-container {
     display: flex;
-    gap: 20px; /* Espacio entre los slides */
-    animation: scroll 500s linear infinite; /* Solo animamos el contenedor de los slides */
+    gap: 3rem; /* Espacio entre los slides */
+    animation: scroll 500s linear infinite;
+    height: 100%;
 }
 
 .carousel-slide {
-    flex: 0 0 auto; /* Los slides no se encogen ni se expanden */
-    width: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;/* Los slides no se encogen ni se expanden */
+    width: 300px;
     min-width: 200px;
-    background: var(--background-secondary, #f8f9fa);
-    border-radius: 8px;
+    background: var(--background-secondary, #fffaf3);
+    border-radius: 0px 20px 0px 60px; 
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.7);
     padding: 12px;
+    margin: 1rem 1rem;
+
+}
+.carousel-slide:hover{
+    background-color: #3f3f3f;
+}
+.carousel-slide:hover h3{
+    color: white;
+}
+.carousel-slide:hover p{
+    color:white;
 }
 
 .image-container {
@@ -90,11 +108,13 @@ h1{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 0px 20px 0px 60px; 
+
 }
 
 .carousel-slide h3 {
-    margin: 0 0 8px 0;
-    font-size: 14px;
+    padding-left: 0.8rem;
+    font-size: 20px;
     font-weight: 600;
     color: var(--text-primary, #333333);
     white-space: nowrap;
@@ -104,7 +124,9 @@ h1{
 
 .carousel-slide p {
     margin: 0;
-    font-size: 12px;
+    padding-left: 0.8rem;
+    padding-bottom: 1.5rem;
+    font-size: 18px;
     color: var(--text-secondary, #666666);
     white-space: nowrap;
     overflow: hidden;
