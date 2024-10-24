@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family:'Aileron';
+    src: url('aileron-regular.woff2') format('woff2');
+    src: url('aileron-regular.woff') format('woff');
+}
+
+main {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black; 
+}
+.logo {
+    max-width:250px ; 
+    height: auto; 
+}
+@media (min-width: 1024px) {
+    .logo {
+        max-width: 250px; 
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        max-width: 200px; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .logo {
+        max-width: 150px; /
+    }
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8.5rem;
+    background: #000; 
+    z-index: 100;
+    margin-left: 0;  
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+    margin-right: 4rem;
+
+}
+
+.navlist li {
+    margin-left: 5rem;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    letter-spacing: 4px;
+    font-family:'Aileron';
+}
+
+.navlist li a:hover {
+    color: rgb(240, 56, 163);
+}
+
+.pieDePagina{
+    background-color: #181719;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    flex-wrap: wrap;
+  
+}
+
+.pieDePagina ul {
+    margin-right: 40px;
+    padding-right: 40px;
+    margin-left: 40px;
+    list-style-type: none;
+    color: rgb(143, 137, 137);
+    font-family:'Aileron';
+
+}  
+
+.pieDePagina ul h4 {
+    list-style-type: none;
+    color:white;
+    font-family:'Aileron';
+}  
+
+.pieDePagina ul li a{
+    text-decoration: none;
+    color: rgb(143, 137, 137);
+    font-family:'Aileron';
+    line-height: 1.7;
+    font-size:0,7 rem;
+}
+
+.pieDePagina ul li a:hover{
+    color: white;
+    text-decoration: underline; 
+}
+
+.sub-footer {
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+    font-size: 17px;
+
+ 
+}
+
+.divider {
+    border: none; 
+    border-top: 1px solid #ccc; 
+    width: 100vw;
+
+}
+
+.social-icon {
+    width: 70px; 
+    height: 70px; 
+    margin: 0 10px;
+}

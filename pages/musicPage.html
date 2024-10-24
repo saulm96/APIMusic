@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SonarLink</title>
+    <link rel="stylesheet" href="/commonStyle.css">
+    <link rel="stylesheet" href="/css/musicPageStyle.css">
+    <link rel="stylesheet" href="/css/tracksFilter.css">
+    <link rel="stylesheet" href="/css/styleAlbumArtistas.css">
+    <link rel="icon" href="/images/logos/faviconweb.png" type="png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <figure>
+                <img class="logo" src="/images/logos/sonarlinkblanco.png" alt="Logo">
+            </figure>
+            <ul class="navlist">
+                <li><a href="">Música</a></li>
+                <li><a href="">Novedades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="carousel-main"></section>
+    <script type="module" src="/js-scripts/carousel.js"></script>
+    <section class="filterBox">
+        <h1>Música</h1>
+        <p>El buscador de música más potente basado en la API de música de Spotify.</p>
+
+        <div id="search"></div>
+
+        <div id="search-results"></div>
+        <div id="artists-section" class="serch-results-artists">
+            <h2>Artistas</h2>
+            <div id="artists-results" class="cards-container"></div>
+        </div>
+
+        <div id="tracks-section" class="search-results-tracks">
+            <h2>Canciones</h2>
+            <div id="tracks-results" class="cards-container"></div>
+        </div>
+
+        <div id="albums-section" class="search-results-albums">
+            <h2>Albums</h2>
+            <div id="albums-results" class="cards-container"></div>
+        </div>
+
+        <script type="module" src="/js-scripts/classes/searchBar.js"></script>
+
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
+    </section>
+
+    <footer class="pieDePagina">
+        <ul class="Company">
+            <li>
+                <h4>Empresa</h4>
+            </li>
+            <li><a href="">A cerca de</a></li>
+            <li><a href="">Empleo</a></li>
+        </ul>
+
+        <ul class="comunity">
+            <li>
+                <h4>Comunidad</h4>
+            </li>
+            <li><a href="">Para artistas</a></li> <!-- Faltan links -->
+            <li><a href="">Desarrolladores</a></li> <!-- Faltan links -->
+            <li><a href="">Publicidad</a></li> <!-- Faltan links -->
+            <li><a href="">Inversores</a></li> <!-- Faltan links -->
+            <li><a href="">Proveedores</a></li> <!-- Faltan links -->
+        </ul>
+
+        <ul class="policyPolitics">
+            <li>
+                <h4>Privacidad y Legalidad</h4>
+            </li>
+            <li><a href="">Centro de seguridad y privacidad.</a></li><!-- Faltan links -->
+            <li><a href="">Política de privacidad.</a></li><!-- Faltan links -->
+            <li><a href="">Configuración de cookies.</a></li><!-- Faltan links -->
+        </ul>
+
+        <ul class="contactInfo">
+            <li>
+                <h4>Contacto</h4>
+            </li>
+            <li>Tlf: +1 (555) 555 5555</li>
+            <li>Email: sonarmanager@sonarlink.com</li>
+            <li>Dirección: Arturo Campion 1, 9ªD</li>
+        </ul>
+
+        <div class="sub-footer">
+            <hr class="divider">
+            <p>Legal | Accesibilidad | Declaración de Privacidad | © SonarLink 2024 </p>
+            <a href="https://www.facebook.com" target="_blank"><img src="/images/footerLogos/fbblanco.png"
+                    alt="Facebook" class="social-icon"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="/images/footerLogos/twiterblanco.png"
+                    alt="Twitter" class="social-icon"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="/images/footerLogos/instablanco.png"
+                    alt="Instagram" class="social-icon"></a>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

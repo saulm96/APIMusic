@@ -42,48 +42,84 @@ h1{
 }
 
 
-/*Carousel
-.scroll-container{
-    position: relative;
-    overflow: hidden;
-    height: 200px;
-    width:100%;
+
+
+#carousel-main {
+    margin-top:8rem;
+    width: 100%;
+    padding: 20px 0;
+    background: var(--background-primary, #ffffff);
 }
 
-.carousel-image{
-    position: absolute;
-    top: 0;
-    left: 0;
+.carousel-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Oculta los slides que están fuera de la vista */
+}
+
+.carousel-track {
+    display: flex;
+    position: relative;
+}
+
+.slides-container {
+    display: flex;
+    gap: 20px; /* Espacio entre los slides */
+    animation: scroll 500s linear infinite; /* Solo animamos el contenedor de los slides */
+}
+
+.carousel-slide {
+    flex: 0 0 auto; /* Los slides no se encogen ni se expanden */
+    width: 200px;
+    min-width: 200px;
+    background: var(--background-secondary, #f8f9fa);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.image-container {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.image-container img {
     width: 100%;
     height: 100%;
-    object-fit:contain;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    object-fit: cover;
 }
 
-.dots-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
-
+.carousel-slide h3 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary, #333333);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: black;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.carousel-slide p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--text-secondary, #666666);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.dot:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Inicia en la posición normal */
+    }
+    100% {
+        transform: translateX(-100%); /* Se desplaza todo el ancho de los slides */
+    }
 }
 
-.dot.active {
-    background-color: red;
-    transform: scale(1.2);
-}*/
-
+/* Pausar la animación al hacer hover */
+.slides-container:hover {
+    animation-play-state: paused;
+}
