@@ -43,13 +43,8 @@ h1 {
     font-size: 1.4em;
     font-family: 'Aileron';
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-
     
 }
-
-
-
-
 
 body {
     /* Alineado a la derecha */
@@ -85,10 +80,11 @@ body {
     display: flex;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 
-
 }
-.diapositiva1 {
 
+
+.diapositiva1 {
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
