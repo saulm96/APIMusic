@@ -2,6 +2,8 @@
     font-family: 'aileronbold';
     src: url('aileron-bold.woff2') format('woff2'),
          url('aileron-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 
 }
 
@@ -36,10 +38,9 @@
     font-family: 'aileronitalic';
     src: url('aileron-italic.woff2') format('woff2'),
          url('aileron-italic.woff') format('woff');
-  
+    font-weight: normal;
+    font-style: italic;
 }
-
-
 
 
 
@@ -54,8 +55,24 @@
 
 
 @font-face {
-    font-family: 'aileronlight_italic';
-    src: url('aileron-lightitalic.woff2') format('woff2'),
-         url('aileron-lightitalic.woff') format('woff');
+    font-family: 'aileron_regular';
+    src: url('aileron-regular.woff2') format('woff2'),
+         url('aileron-regular.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'aileron_semibold';
+    src: url('aileron-semibold.woff2'), format('woff2'),
+         url('aileron-semibold.woff') format('woff');
 
 }
+@font-face {
+    font-family: 'aileron_semibolditalic';
+    src: url('aileron-semibolditalic.woff2') format('woff2'),
+         url('aileron-semibolditalic.woff') format('woff');;
+
+}
+
