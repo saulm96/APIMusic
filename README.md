@@ -1,5 +1,7 @@
-# APIMusic
-##Aplicación de música.
+# SONARLINK
+##Aplicación de música. 
+
+Funcion de la página: biblioteca musical.
 
 Barra de navegación donde separemos música, podcast, audiolibros.
 

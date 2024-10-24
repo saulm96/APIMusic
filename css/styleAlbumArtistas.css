@@ -1,0 +1,52 @@
+/* Estilos de las tarjetas para artistas y albumes */
+.artist-card {
+    border: 1px solid #ddd;
+    border-radius: 0px 50px 0px 80px; 
+    padding: 10px;
+    margin: 10px;
+    width: 450px;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.7);
+    background-color: #fffaf3;
+    text-align: left;
+    font-family:'aileronbold';
+}
+
+.artist-card h2{
+    font-size: 30px;
+    padding-left: 40px;
+    font-family:'aileronbold';
+}
+
+.artist-card h3{
+    font-family:'aileronbold';
+    font-size: 22px;
+    padding-left: 40px;
+}
+
+.artist-card p{
+    font-family:'aileronbold';
+    font-size: 25px;
+    padding-left: 40px;
+}
+
+.artist-card img {
+    width: 100%;
+    border-radius: 0px 50px 0px 80px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+#artist-results .cards-container {
+    padding-left: 4rem;
+}
+
+.artist-card:hover {
+    background-color:#3f3f3f;
+    color: #fffaf3;
+}

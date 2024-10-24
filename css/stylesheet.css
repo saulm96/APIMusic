@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'aileronbold';
+    src: url('/font_aileron/aileron-bold.woff2') format('woff2'),
+         url('/font_aileron/aileron-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'aileronbold_italic';
+    src: url('/font_aileron/aileron-bolditalic.woff2') format('woff2'),
+         url('/font_aileron/aileron-bolditalic.woff') format('woff');
+}
+
+
+
+@font-face {
+    font-family: 'aileronheavy';
+    src: url('/font_aileron/aileron-heavy.woff2') format('woff2'),
+         url('/font_aileron/aileron-heavy.woff') format('woff');
+}
+
+
+
+
+@font-face {
+    font-family: 'aileronheavy_italic';
+    src: url('/font_aileron/aileron-heavyitalic.woff2') format('woff2'),
+         url('/font_aileron/aileron-heavyitalic.woff') format('woff');
+}
+
+
+
+@font-face {
+    font-family: 'aileron_italic';
+    src: url('/font_aileron/aileron-italic.woff2') format('woff2'),
+         url('/font_aileron/aileron-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'aileron_light';
+    src: url('/font_aileron/aileron-light.woff2') format('woff2'),
+         url('/font_aileron/aileron-light.woff') format('woff');
+ 
+
+}
+
+
+
+@font-face {
+    font-family: 'aileron_regular';
+    src: url('/font_aileron/aileron-regular.woff2') format('woff2'),
+         url('/font_aileron/aileron-regular.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'aileron_semibold';
+    src: url('/font_aileron/aileron-semibold.woff2'), format('woff2'),
+         url('/font_aileron/aileron-semibold.woff') format('woff');
+
+}
+@font-face {
+    font-family: 'aileron_semibolditalic';
+    src: url('/font_aileron/aileron-semibolditalic.woff2') format('woff2'),
+         url('/font_aileron/aileron-semibolditalic.woff') format('woff');;
+
+}
+

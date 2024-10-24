@@ -1,0 +1,123 @@
+@import url('/css/stylesheet.css');
+
+* {
+    margin-left: 0;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'aileronbold';
+    font-size: 6rem;
+    margin-top: 450px;
+    margin-left: 60px;
+    color: #fffaf3;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 94vh;
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.overlay-text h1 {
+    font-size: 5em;
+    margin: 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    font-family: 'aileronheavy';
+}
+
+
+.overlay-text p {
+    font-size: 1.5em;
+    font-family: 'aileron_regular';
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+
+}
+
+body {
+    /* Alineado a la derecha */
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 6rem;
+    background: url('tu-imagen.png') no-repeat center center;
+    background-size: cover;
+}
+
+.content {
+    max-width: 40%;
+    /* Limitar el ancho para que sea legible */
+    text-align: right;
+    font-size: 2em;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        justify-content: center;
+        /* Centrar contenido en pantallas pequeñas */
+        padding-right: 0;
+        padding-left: 0px;
+        /* Añadir algo de padding en los bordes */
+        padding-right: 0px;
+    }
+
+    .content {
+        max-width: 90%;
+        /* Ancho mayor para pantallas pequeñas */
+        text-align: center;
+        /* Centramos el texto */
+    }
+}
+
+.diapositivas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fffaf3;
+    background-image: linear-gradient(rgba(255, 87, 87, 0.35), rgba(140, 82, 255, 0.35)), url('/images/fondomusica.jpg');
+    background-size: cover;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.diapositiva1 h2 {
+    font-family: 'aileron_regular';
+    font-size: 4.5rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    color: #fffaf3;
+    padding: 0px 0px 0px 130px; 
+
+}
+h2 {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    letter-spacing: 3px;
+    
+}
+a {
+  text-decoration: none;  
+}
