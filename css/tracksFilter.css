@@ -1,11 +1,24 @@
-.track-card {
+#tracks-results .track-card {
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-results-tracks {
+    padding-top: 2rem;
+}
+.track-card {
+    width: 85%;
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
-    gap: 0.5rem; 
 }
-
+.track-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 0.3fr;
+    width: 100%;
+    align-items: end;
+}
 
 .track-card img {
     width: 80px;
@@ -16,16 +29,8 @@
     margin-left: 1.5rem;
 }
 
-/* .track-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around; 
-    width: 100%;
-} */
-
 .track-name {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
     font-family: 'aileronbold';
@@ -34,32 +39,35 @@
 .artists,
 .album {
     font-size: 18px;
-    margin: 5px 0;
+    margin: 0;
     font-family: 'aileron_regular';
 }
 
 .duration {
     font-size: 18px;
+    margin: 0;
+    margin-top: 2rem;
     font-family: 'aileron_regular';
+    text-align: center;
 }
 
 .explicit {
-    font-size: 15px;
+    font-size: 18px;
     color: rgb(195, 9, 9);
+    margin-top: 0;
+    margin-bottom: 0;
     font-family: 'aileronheavy';
+    height: 21.333px;
 }
 
 .play {
     margin: 0.5rem;
     margin-right: 1.5rem;
     align-self: center;
-    
-}
-.track-card:hover {
-    background-color: #3f3f3f;
-        color:#ffffff;
+
 }
 
-.track-card > * {
-    margin: 5px 0;
+.track-card:hover {
+    background-color: #3f3f3f;
+    color: #ffffff;
 }

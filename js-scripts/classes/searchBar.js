@@ -60,7 +60,7 @@ class SearchBar {
         button.classList.add('filter-button');
 
         button.addEventListener('click', () => this.changeFilter('albumes'));
-
+    
         this.buttonsContainer.appendChild(button);
     }
 

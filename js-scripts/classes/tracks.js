@@ -44,7 +44,10 @@ class Track {
         play.src = this.trackPreview;
         play.controls = true;
 
-        section.append(image, trackName, artists, album, duration, explicit, play);
+        const trackInfo = document.createElement('div');
+        trackInfo.classList.add('track-info');
+        trackInfo.append(trackName, artists, album, duration, explicit)
+        section.append(image, trackInfo, play);
         return section;
     }
 }
