@@ -1,4 +1,4 @@
-
+@import url('/css/stylesheet.css');
 body{
     display: flex;
     flex-direction: column;
@@ -11,43 +11,28 @@ header {
     width: 100%; 
 }
 
-h1{
-    font-family: "Times New Roman";
-    font-size: 4rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
-.lupa-icon {
-    width: 18px; /* Tamaño de la imagen de la lupa */
-    height: 18px;
-}
-
-.lupa-icon {
-    width: 60px;
-    height: 60px;
-    
-    
   
-}
 .search-input{
     border-radius: 50px 50px 50px 50px; 
     height: 3rem;
-    width: 25rem;
-    font-size: 22px;
+    width: 52rem;
+    font-size: 18px;
     padding: 10px 30px;
+    font-family:'aileronbold';
+    border: none;
   
 }
 
 .filter-button{
-    margin: 10px 20px 20px 0px; 
+    margin: 10px 21px 20px 0px; 
     border-radius: 50px 50px 50px 50px; 
     height: 3rem;
     width: 12rem;
-    font-size: 22px;
+    font-size: 18px;
     background-color: #3f3f3f;
     color: #f8f9fa;
+    font-family:'aileronbold';
+    border: none;
    
 }
 .filter-button:hover{
@@ -56,14 +41,6 @@ font-weight: bold;
 
 }
 
-
-.filterBox p {
-    font-family: "Times New Roman";
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-
-}
 
 .filterBox{
     padding: 5rem;
@@ -156,6 +133,7 @@ font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-family: 'aileronbold';
 }
 
 .carousel-slide p {
@@ -167,6 +145,7 @@ font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-family: 'aileronbold';
 }
 
 @keyframes scroll {
