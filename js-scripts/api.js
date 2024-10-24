@@ -325,5 +325,6 @@ export {
     searchOnSpotify,
     searchTracksOnSpotify,
     searchAlbumsOnSpotify,
-    searchArtistsOnSpotify
+    searchArtistsOnSpotify,
+    getNewReleases
 }
