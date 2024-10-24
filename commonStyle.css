@@ -43,7 +43,7 @@ main {
     height: 6rem;
     background: #000; 
     z-index: 100;
-    margin-left: 0;  
+    margin-left: 0; 
 }
 
 .navlist {
@@ -106,9 +106,12 @@ main {
     color: white;
     text-decoration: underline; 
 }
-
+.Company {
+    padding-left: 0;
+    margin-left: 5rem;
+}
 .contactInfo {
-    margin-right: 2rem;
+    margin-right: 5rem;
 }
 .sub-footer {
     text-align: center;
