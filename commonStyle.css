@@ -1,13 +1,5 @@
 
-
-@font-face {
-    font-family:'Aileron';
-    src: url('aileron-regular.woff2') format('woff2');
-    src: url('aileron-regular.woff') format('woff');
-}
-
-
-
+@import url('css/stylesheet.css');
 
 .logo {
     max-width:250px ; 
