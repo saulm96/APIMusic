@@ -1,15 +1,12 @@
+@import url('/css/stylesheet.css');
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-
 main {
     width: 100%;
 }
-
-
-@import url('css/stylesheet.css');
 
 .logo {
     max-width:250px ; 
@@ -43,7 +40,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 8.5rem;
+    height: 6rem;
     background: #000; 
     z-index: 100;
     margin-left: 0;  
@@ -53,7 +50,7 @@ main {
     display: flex;
     list-style: none;
     margin-right: 4rem;
-
+    font-family:'aileron_semibold';
 }
 
 .navlist li {
@@ -66,7 +63,7 @@ main {
     font-size: 1.1rem;
     transition: color 0.3s ease;
     letter-spacing: 4px;
-    font-family:'Aileron';
+    font-family:'aileron_semibold';
 }
 
 .navlist li a:hover {
@@ -78,31 +75,29 @@ main {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 600px;
+    height: 23rem;
     flex-wrap: wrap;
   
 }
 
 .pieDePagina ul {
-    margin-right: 40px;
-    padding-right: 40px;
-    margin-left: 40px;
+    
     list-style-type: none;
     color: rgb(143, 137, 137);
-    font-family:'Aileron';
+    font-family:'aileron_light';
 
 }  
 
 .pieDePagina ul h4 {
     list-style-type: none;
     color:white;
-    font-family:'Aileron';
+    font-family:'aileron_light';
 }  
 
 .pieDePagina ul li a{
     text-decoration: none;
     color: rgb(143, 137, 137);
-    font-family:'Aileron';
+    font-family:'aileron_light';
     line-height: 1.7;
     font-size:0,7 rem;
 }
@@ -112,11 +107,15 @@ main {
     text-decoration: underline; 
 }
 
+.contactInfo {
+    margin-right: 2rem;
+}
 .sub-footer {
     text-align: center;
     color: #ccc;
     font-size: 17px;
     width: 100%;
+    font-family:'aileron_light';
 }
 
 .divider {
