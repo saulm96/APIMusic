@@ -16,9 +16,46 @@ h1{
     font-size: 4rem;
     margin-top: 20px;
     margin-bottom: 20px;
- 
 
 }
+
+.lupa-icon {
+    width: 18px; /* Tamaño de la imagen de la lupa */
+    height: 18px;
+}
+
+.lupa-icon {
+    width: 60px;
+    height: 60px;
+    
+    
+  
+}
+.search-input{
+    border-radius: 50px 50px 50px 50px; 
+    height: 3rem;
+    width: 25rem;
+    font-size: 22px;
+    padding: 10px 30px;
+  
+}
+
+.filter-button{
+    margin: 10px 20px 20px 0px; 
+    border-radius: 50px 50px 50px 50px; 
+    height: 3rem;
+    width: 12rem;
+    font-size: 22px;
+    background-color: #3f3f3f;
+    color: #f8f9fa;
+   
+}
+.filter-button:hover{
+background-color: rgb(63, 63, 63, 0.4);
+font-weight: bold;
+
+}
+
 
 .filterBox p {
     font-family: "Times New Roman";
@@ -38,8 +75,9 @@ h1{
     display: flex;
     width: 100%;
     background-size: cover;
-    margin-bottom: 0px;
-    margin-top: 60px;
+    margin-bottom: 0;
+    margin-top:0;
+    padding-top: 30px;
 }
 
 

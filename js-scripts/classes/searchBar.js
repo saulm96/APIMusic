@@ -35,7 +35,7 @@ class SearchBar {
 
         const searchInput = document.createElement('input');
         searchInput.type = 'text';
-        searchInput.placeholder = 'Escribe para buscar...';
+        searchInput.placeholder = ' Escribe aquí...';
         searchInput.classList.add('search-input');
 
         searchInput.addEventListener('input', (e) => {
