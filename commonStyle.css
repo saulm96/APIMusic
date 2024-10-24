@@ -1,4 +1,7 @@
-
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
 @font-face {
     font-family:'Aileron';
@@ -6,7 +9,9 @@
     src: url('aileron-regular.woff') format('woff');
 }
 
-
+main {
+    width: 100%;
+}
 
 
 .logo {
@@ -112,9 +117,9 @@
 
 .sub-footer {
     text-align: center;
-    padding: 20px;
     color: #ccc;
     font-size: 17px;
+    width: 100%;
 
  
 }
@@ -122,7 +127,7 @@
 .divider {
     border: none; 
     border-top: 1px solid #ccc; 
-    width: 100vw;
+    width: 100%;
 
 }
 
