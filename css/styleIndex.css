@@ -1,4 +1,8 @@
 
+header {
+    width: 100%; 
+}
+
 h1 {
     font-size: 6rem;
     margin-top: 450px;
@@ -6,9 +10,6 @@ h1 {
     color: #fffaf3;
 
 }
-
-
-
 
 .video-container {
     position: relative;
