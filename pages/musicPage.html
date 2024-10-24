@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/ common_style.css">
     <link rel="stylesheet" href="/css/musicPageStyle.css">
     <link rel="stylesheet" href="/css/tracksFilter.css">
+    <link rel="stylesheet" href="/css/style_albumyartistas.css">
     <link rel="icon" href="/images/logos/faviconweb.png" type= "png">
 </head>
 <body>
@@ -24,25 +25,27 @@
     <section class="filterBox">
         <h1>Música</h1>
         <p>El buscador de música más potente basado en la API de música de Spotify.</p> 
-        <!-- <div class="filterBrowser">
-            <label for="artistname">Artista:</label>
-            <input type="text" name="artistname" id="artistname" placeholder="Nombre Artista">
-
-            <label for="genresFilter">Genero:</label>
-            <select name="genresFilter" id="genresFilter">
-                <option value="#"></option>
-            </select>
-
-            <label for="yearOfLaunch">Año Lanzamiento:</label>
-            <input type="number" name="yearOfLaunch" id="yearOfLaunch" placeholder="Año">
-        </div> -->
+       
         <div id="search"></div>
         
         <div id="search-results"></div>
-            <div id="tracks-results"></div>
-            <div id="albums-results"></div>
-            <div id="artists-results"></div>
+        <div id="artists-section" class="serch-results-artists">
+            <h2>Artistas</h2>
+            <div id="artists-results" class="cards-container"></div>
+        </div>
+
+        <div id="tracks-section" class="search-results-tracks">
+            <h2>Canciones</h2>
+            <div id="tracks-results" class="cards-container"></div>
+        </div>
+
+        <div id="albums-section" class="search-results-albums">
+            <h2>Albums</h2>
+            <div id="albums-results" class="cards-container"></div>
+        </div>
+
         <script type="module" src="/js-scripts/classes/searchBar.js"></script>
+    
         <style>
             .hidden {
                 display: none;
