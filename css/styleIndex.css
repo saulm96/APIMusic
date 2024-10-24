@@ -1,9 +1,15 @@
+@import url('/css/stylesheet.css');
+
+* {
+    margin-left: 0;
+}
 
 header {
-    width: 100%; 
+    width: 100%;
 }
 
 h1 {
+    font-family: 'aileronbold';
     font-size: 6rem;
     margin-top: 450px;
     margin-left: 60px;
@@ -14,9 +20,10 @@ h1 {
 .video-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 87vh;
     overflow: hidden;
 }
+
 #background-video {
     width: 100%;
     height: 100%;
@@ -36,58 +43,55 @@ h1 {
     font-size: 5em;
     margin: 0;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    font-family: 'aileronbold';
 }
 
 
 .overlay-text p {
     font-size: 1.4em;
-    font-family: 'Aileron';
+    font-family: 'aileronbold';
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 
-    
+
 }
-
-
-
 
 
 body {
     /* Alineado a la derecha */
-      align-items: center;
-      height: 100vh;
-      width: 100%;
-      background: url('tu-imagen.png') no-repeat center center;
-      background-size: cover;
-      padding-right: 20mm; /* Margen derecho de 20mm */
-    }
-  
-    .content {
-      max-width: 40%; /* Limitar el ancho para que sea legible */
-      text-align: right;
-      font-size: 2em;
-      color: white;
-    }
-  
-    @media (max-width: 768px) {
-      body {
-        justify-content: center; /* Centrar contenido en pantallas pequeñas */
-        padding-right: 0;
-        padding-left: 10px; /* Añadir algo de padding en los bordes */
-        padding-right: 10px;
-      }
-  
-      .content {
-        max-width: 90%; /* Ancho mayor para pantallas pequeñas */
-        text-align: center; /* Centramos el texto */
-      }
-    }
-
-.diapositiva2 h1{
-    display: flex;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-
-
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 8.5rem;
+    background: url('tu-imagen.png') no-repeat center center;
+    background-size: cover;
 }
+
+.content {
+    max-width: 40%;
+    /* Limitar el ancho para que sea legible */
+    text-align: right;
+    font-size: 2em;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        justify-content: center;
+        /* Centrar contenido en pantallas pequeñas */
+        padding-right: 0;
+        padding-left: 10px;
+        /* Añadir algo de padding en los bordes */
+        padding-right: 10px;
+    }
+
+    .content {
+        max-width: 90%;
+        /* Ancho mayor para pantallas pequeñas */
+        text-align: center;
+        /* Centramos el texto */
+    }
+}
+
 .diapositiva1 {
 
     display: flex;
@@ -95,41 +99,28 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    background-color:#fffaf3;
+    height: 100%;
+    background-color: #fffaf3;
     background-size: cover;
     background-image: linear-gradient(rgba(255, 87, 87, 0.35), rgba(140, 82, 255, 0.35)), url('/images/fondomusica.jpg');
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    contain: content;
 }
 
-.diapositiva1 h2{
-    margin: 0; 
-    padding: 0;
-    display: flex;
+.diapositiva1 h2 {
+    width: 100%;
+    margin: 0;
+    padding-right: 2rem;
+    display: grid;
     justify-content: flex-end;
-    font-family: 'Aileron';
+    font-family: 'aileronbold';
     justify-items: right;
     align-items: center;
-    height: 100vh;
+    height: 87vh;
     font-size: 4.5rem;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     color: #fffaf3;
-    
-
 }
-
-.diapositiva2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: black;
-    background-size: cover;
-    color: rgb(255, 87, 87);
+.diapositivas a {
+  text-decoration: none;  
 }
-
