@@ -37,17 +37,17 @@ class Carousel {
                 imgElement.alt = `${release.artist} - ${release.name}`;
                 imgContainer.appendChild(imgElement);
 
-                const artistElement = document.createElement('h3');
+                const artistElement = document.createElement('p');
                 artistElement.textContent = Array.isArray(release.artist)
                     ? release.artist.join(', ')
                     : release.artist;
 
-                const songElement = document.createElement('p');
+                const songElement = document.createElement('h3');
                 songElement.textContent = release.name;
 
                 slide.appendChild(imgContainer);
-                slide.appendChild(artistElement);
                 slide.appendChild(songElement);
+                slide.appendChild(artistElement);
 
                 slidesContainer.appendChild(slide); // Añadir cada slide
             });
