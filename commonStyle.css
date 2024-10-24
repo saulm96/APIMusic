@@ -1,15 +1,13 @@
+@import url('css/stylesheet.css');
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-
 main {
     width: 100%;
 }
-
-
-@import url('css/stylesheet.css');
 
 .logo {
     max-width:250px ; 
